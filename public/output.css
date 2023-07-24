@@ -1276,12 +1276,13 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   flex-direction: column;
 }
 
 .ct-parallax {
   height: 40vh;
+  position: relative;
+  z-index: -1;
 }
 
 .ct-no-parallax {
@@ -1301,16 +1302,16 @@ video {
   background-attachment: fixed;
 }
 
-/* @media screen(xl) {
+@media (min-width: 1280px) {
   .ct-parallax {
     height: 70vh;
     transform-style: preserve-3d;
   }
-  
+
   .ct-parallax-image {
     transform: translateZ(-1px) scale(1.5);
   }
-} */
+}
 
 .placeholder\:text-xs::-moz-placeholder{
   font-size: 0.75rem;

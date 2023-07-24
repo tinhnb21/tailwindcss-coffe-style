@@ -52,11 +52,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   flex-direction: column;
 }
 .ct-parallax {
   height: 40vh;
+  position: relative;
+  z-index: -1;
 }
 .ct-no-parallax {
   height: auto;
@@ -74,13 +75,13 @@
   background-attachment: fixed;
 }
 
-/* @media screen(xl) {
+@media screen(xl) {
   .ct-parallax {
     height: 70vh;
     transform-style: preserve-3d;
   }
-  
+
   .ct-parallax-image {
     transform: translateZ(-1px) scale(1.5);
   }
-} */
+}
